@@ -191,7 +191,7 @@ function openProjectModal(projectId) {
                                class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition inline-flex items-center gap-1 border border-gray-200">
                                 <i class="fas fa-table"></i> View Raw Data (Google Sheets)
                             </a>
-                            <a href="assetsSupplyChain_Presentation.pdf" target="_blank"
+                            <a href="assets/SupplyChainHTML/SupplyChain_Presentation.pdf" target="_blank"
                                class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition inline-flex items-center gap-1 border border-gray-200">
                                 <i class="fas fa-file-pdf"></i> View Presentation (PDF)
                             </a>
