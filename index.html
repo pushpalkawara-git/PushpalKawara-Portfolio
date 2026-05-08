@@ -81,62 +81,72 @@
     <main class="container mx-auto px-4 md:px-6 pt-28 pb-12">
         
         <!-- ========== HERO SECTION ========== -->
-        <section id="home" class="min-h-screen flex items-center justify-center mb-20">
-            <div class="text-center text-white max-w-4xl mx-auto">
-                <!-- Profile Picture -->
-                <div class="relative inline-block mb-8">
-                    <div class="profile-ring mx-auto float-animation">
-                        <img src="assets/MY-INFO/profile.png" alt="Pushpal Kawara" class="w-full h-full object-cover"
+      <section id="home" class="min-h-[90vh] flex items-center justify-center mb-12">
+            <div class="text-white max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14 w-full px-2">
+                <!-- Left Column: Text -->
+                <div class="flex-1 text-center md:text-left order-2 md:order-1">
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-3 tracking-tight">Pushpal Kawara</h1>
+                    <div class="text-xl md:text-2xl mb-4 font-medium h-10 flex items-center justify-center md:justify-start">
+                        <span id="role-typing"></span>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm md:text-base mb-5 opacity-90">
+                        <span class="flex items-center gap-1"><i class="fas fa-map-marker-alt text-blue-300"></i> Maharashtra, India</span>
+                        <a href="tel:+917796004314" class="flex items-center gap-1 hover:text-blue-300 transition"><i class="fas fa-phone-alt text-blue-300"></i> +91 7796004314</a>
+                        <a href="mailto:pushpalkawara.contact@gmail.com" class="flex items-center gap-1 hover:text-blue-300 transition"><i class="fas fa-envelope text-blue-300"></i> pushpalkawara.contact@gmail.com</a>
+                    </div>
+                    <div class="flex justify-center md:justify-start gap-5 mb-6">
+                        <a href="https://linkedin.com/in/pushpal-kawara" target="_blank" class="text-white hover:text-blue-300 transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:pushpalkawara.contact@gmail.com" class="text-white hover:text-blue-300 transition text-2xl"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917796004314" class="text-white hover:text-blue-300 transition text-2xl"><i class="fas fa-phone-alt"></i></a>
+                        <a href="https://wa.me/917796004314?text=Hello%20Pushpal,%20I%20viewed%20your%20portfolio" target="_blank" class="text-white hover:text-blue-300 transition text-2xl"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p class="text-sm md:text-base mb-8 opacity-90 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                        Data &amp; BI Analyst who bridges business needs with technical solutions. At a platform with <strong class="text-white">50k+ daily users</strong>, I gathered requirements, mapped user journeys, built enterprise‑grade Power BI dashboards, and automated weekly MIS reporting — reclaiming half a workday.<br><br>
+                        I design and deliver end‑to‑end analytics systems — from star‑schema data models to interactive reports — that let stakeholders answer critical questions in seconds. Proficient in <strong class="text-white">SQL Server, Power BI (DAX), Advanced Excel, Google Sheets, and Python</strong>.<br><br>
+                        Open to roles where data drives growth: <strong class="text-white">Data Analyst, Business Analyst, MIS Executive, or BI Developer</strong> — across any industry.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <button onclick="downloadResume()" class="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold hover:shadow-2xl transition btn-pulse shadow-lg">
+                            <i class="fas fa-download mr-2"></i>Download Resume
+                        </button>
+                        <button onclick="scrollToContact()" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-700 transition">
+                            <i class="fas fa-comments mr-2"></i>Let's Connect
+                        </button>
+                    </div>
+                </div>
+                <!-- Right Column: Professional Profile Image -->
+                <div class="flex-shrink-0 order-1 md:order-2 relative mb-8 md:mb-0">
+                    <div class="w-60 h-72 md:w-72 md:h-84 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 bg-gradient-to-br from-indigo-600 to-purple-700 p-1">
+                        <img src="assets/MY-INFO/profile.png" alt="Pushpal Kawara" class="w-full h-full object-cover rounded-3xl"
                              onerror="this.src='https://randomuser.me/api/portraits/men/32.jpg'">
                     </div>
-                    <div class="absolute bottom-1 right-1 bg-green-500 w-5 h-5 rounded-full border-2 border-white shadow-md"></div>
-                </div>
-
-                <!-- Name & Role -->
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">Pushpal Kawara</h1>
-                <div class="text-xl md:text-2xl mb-5 font-medium h-10 flex items-center justify-center">
-                    <span id="role-typing"></span>
-                </div>
-
-                <!-- Contact Info Row -->
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm md:text-base mb-6 opacity-90">
-                    <span class="flex items-center gap-1"><i class="fas fa-map-marker-alt text-blue-300"></i> Maharashtra, India</span>
-                    <a href="tel:+917796004314" class="flex items-center gap-1 hover:text-blue-300 transition">
-                        <i class="fas fa-phone-alt text-blue-300"></i> +91 7796004314
-                    </a>
-                    <a href="mailto:pushpalkawara.contact@gmail.com" class="flex items-center gap-1 hover:text-blue-300 transition">
-                        <i class="fas fa-envelope text-blue-300"></i> pushpalkawara.contact@gmail.com
-                    </a>
-                </div>
-
-                <!-- Social Icons -->
-                <div class="flex justify-center gap-5 mb-8">
-                    <a href="https://linkedin.com/in/pushpal-kawara" target="_blank" class="text-white hover:text-blue-300 transition text-2xl" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:pushpalkawara.contact@gmail.com" class="text-white hover:text-blue-300 transition text-2xl" title="Email"><i class="fas fa-envelope"></i></a>
-                    <!--  <a href="https://github.com/pushpalkawara" target="_blank" class="text-white hover:text-blue-300 transition text-2xl" title="GitHub"><i class="fab fa-github"></i></a> -->
-                    <a href="tel:+917796004314" class="text-white hover:text-blue-300 transition text-2xl" title="Call"><i class="fas fa-phone-alt"></i></a>
-                    <a href="https://wa.me/917796004314?text=Hello%20Pushpal,%20I%20viewed%20your%20portfolio" target="_blank" class="text-white hover:text-blue-300 transition text-2xl" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-
-                <!-- Bio -->
-                <p class="text-base md:text-lg max-w-3xl mx-auto mb-10 opacity-90 leading-relaxed text-left md:text-center px-2">
-                    Data &amp; BI Analyst who bridges business needs with technical solutions. At a platform with <strong class="text-white">50k+ daily users</strong>, I gathered requirements, mapped user journeys, built enterprise‑grade Power BI dashboards, and automated weekly MIS reporting — reclaiming half a workday.<br><br>
-                    I design and deliver end‑to‑end analytics systems — from star‑schema data models to interactive reports — that let stakeholders answer critical questions in seconds. Proficient in <strong class="text-white">SQL Server, Power BI (DAX), Advanced Excel, Google Sheets, and Python</strong>.<br><br>
-                    Open to roles where data drives growth: <strong class="text-white">Data Analyst, Business Analyst, MIS Executive, or BI Developer</strong> — across any industry.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div class="flex flex-wrap gap-4 justify-center">
-                    <button onclick="downloadResume()" class="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold hover:shadow-2xl transition btn-pulse shadow-lg">
-                        <i class="fas fa-download mr-2"></i>Download Resume
-                    </button>
-                    <button onclick="scrollToContact()" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-700 transition">
-                        <i class="fas fa-comments mr-2"></i>Let's Connect
-                    </button>
+                    <div class="absolute -inset-3 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 opacity-20 blur-xl -z-10"></div>
                 </div>
             </div>
         </section>
-        
+
+
+
+                <!-- ========== INTRODUCTION VIDEO ========== -->
+        <section class="mb-12 section-fade">
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-6">Introduction</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="glass-card p-3 md:p-5">
+                    <div class="rounded-xl overflow-hidden bg-black flex justify-center">
+                        <!-- Normal-sized video, responsive, poster removed -->
+                        <video controls controlsList="nodownload" 
+                               style="width:100%; max-width:640px; aspect-ratio:16/9; height:auto; border-radius:12px; outline:none;"
+                               preload="metadata">
+                            <source src="assets/MY-INFO/MyIntroVedio_Pk.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <p class="text-white/70 text-sm text-center mt-3">A 200‑second overview of my approach to data analytics.</p>
+            </div>
+        </section>
+
+  
         <!-- ========== PROJECTS SECTION ========== -->
         <section id="projects" class="mb-20 section-fade">
             <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-10">Featured Projects</h2>
@@ -214,6 +224,30 @@
                         <span><i class="fas fa-calendar-alt mr-1"></i> 4 months data</span>
                     </div>
                 </div>
+                <!-- Project 4: ClaimFlow Analytics -->
+<div class="project-card p-5" onclick="openProjectModal(4)">
+    <div class="relative mb-4 overflow-hidden rounded-xl h-48">
+        <img src="assets/ClaimFlow/ClaimFlow_Preview.png" alt="ClaimFlow Analytics Dashboard"
+             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+             onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop'">
+        <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+        </div>
+    </div>
+    <h3 class="text-xl font-bold mb-2 text-gray-800">ClaimFlow Analytics – US Healthcare RCM</h3>
+    <p class="text-gray-600 text-sm mb-3">End‑to‑end revenue cycle dashboard. 8,500 claims, 4‑page Power BI report. Uncovered 15‑18% denial rates, $450K stuck pending, and 50% appeal recovery rate.</p>
+    <div class="flex flex-wrap gap-2 mb-3">
+        <span class="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full">Power BI</span>
+        <span class="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full">DAX</span>
+        <span class="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full">SQL Server</span>
+        <span class="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full">Power Query</span>
+        <span class="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full">Python</span>
+    </div>
+    <div class="flex justify-between items-center text-sm text-gray-500">
+        <span><i class="fas fa-file-invoice mr-1"></i> 8,500 claims</span>
+        <span><i class="fas fa-hospital mr-1"></i> 20 hospitals</span>
+    </div>
+</div>
             </div>
         </section>
         
@@ -473,7 +507,7 @@
         </div>
     </div>
 
-    <!-- ========== FREELANCE MODAL ========== -->
+        <!-- ========== FREELANCE MODAL (Working with Formspree) ========== -->
     <div id="freelanceModal" class="modal">
         <div>
             <div class="modal-content max-w-md w-full">
@@ -482,15 +516,16 @@
                     <button onclick="closeFreelanceModal()" class="text-2xl leading-none opacity-80 hover:opacity-100">&times;</button>
                 </div>
                 <div class="p-6">
-                    <form id="freelanceForm" onsubmit="submitFreelance(event)">
-                        <input type="text" placeholder="Your Name" class="w-full p-3 mb-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" required>
-                        <input type="email" placeholder="Your Email" class="w-full p-3 mb-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" required>
-                        <input type="text" placeholder="Company / Business" class="w-full p-3 mb-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300">
-                        <textarea placeholder="Tell me about your data analytics needs..." rows="4" class="w-full p-3 mb-4 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none" required></textarea>
+                    <form id="freelanceForm" action="https://formspree.io/f/xbdwzjnl" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" required>
+                        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" required>
+                        <input type="text" name="company" placeholder="Company / Business" class="w-full p-3 mb-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                        <textarea name="message" placeholder="Tell me about your data analytics needs..." rows="4" class="w-full p-3 mb-4 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none" required></textarea>
                         <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition text-sm">
                             Send Inquiry
                         </button>
                     </form>
+                    <p class="text-xs text-gray-500 text-center mt-3">I'll respond within 24 hours. No spam, ever.</p>
                 </div>
             </div>
         </div>
@@ -501,3 +536,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
