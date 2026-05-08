@@ -283,7 +283,71 @@ function openProjectModal(projectId) {
                     </div>
                 </div>
             `
-        }
+        },
+        4: {
+    title: "ClaimFlow Analytics – US Healthcare Revenue Cycle Dashboard",
+    content: `
+        <div>
+            <div class="mb-6 rounded-xl overflow-hidden">
+                <img src="assets/ClaimFlow/ClaimFlow_Preview.png" alt="ClaimFlow Dashboard" class="w-full h-auto rounded-xl shadow-lg"
+                     onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=500&fit=crop'">
+            </div>
+            <div class="grid md:grid-cols-2 gap-5 mb-6">
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <h4 class="font-bold text-indigo-700 mb-1">📊 The Business Problem</h4>
+                    <p class="text-sm text-gray-700">SettleMed, a Noida‑based medical billing startup, needed a single‑pane‑of‑glass view to monitor claim denials, pending amounts, and hospital performance across US payers. Manual Excel reports could not keep up.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <h4 class="font-bold text-indigo-700 mb-1">💡 Solution</h4>
+                    <p class="text-sm text-gray-700">Designed a star‑schema data model in SQL Server, loaded 8,500 messy claims via Python, cleaned with Power Query, and built a 4‑page interactive Power BI dashboard. Automation replaced manual cleaning.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl md:col-span-2">
+                    <h4 class="font-bold text-indigo-700 mb-2">🔍 Key Insights</h4>
+                    <ul class="text-sm text-gray-700 list-disc pl-4 space-y-1">
+                        <li><strong>Commercial payers (Blue Cross, Aetna) deny 15‑18%</strong> of claims — mainly “Missing Documentation”.</li>
+                        <li><strong>$450K stuck in pending claims</strong>, 20% older than 90 days — urgent follow‑up needed.</li>
+                        <li><strong>Appeals recover 50% of denied amounts</strong>, but only 40% are appealed — huge recovery opportunity.</li>
+                        <li><strong>Two hospitals flagged with >25% denial rate</strong> — targeted for coding audits.</li>
+                        <li><strong>Recovery rate of 72%</strong> on appealed claims that were properly documented.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl md:col-span-2">
+                    <h4 class="font-bold text-indigo-700 mb-2">✅ Recommendations</h4>
+                    <ul class="text-sm text-gray-700 list-disc pl-4 space-y-1">
+                        <li>Implement payer‑specific documentation checklists to reduce “Missing Documentation” denials.</li>
+                        <li>Automate alerts for pending claims >60 days.</li>
+                        <li>Create appeal templates for high‑success denial reasons; aim to increase appeal rate to 60%+.</li>
+                        <li>Schedule coding workshops at high‑denial hospitals.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-indigo-50 p-4 rounded-xl mb-5">
+                <h4 class="font-bold text-gray-800 mb-2">🧠 Project Details & Documentation</h4>
+                <p class="text-sm text-gray-600 mb-3">Synthetic data generated with Python, intentionally containing duplicates, inconsistent status casings, and missing denial reasons — mirroring real‑world healthcare exports. Full presentation explains data model, DAX measures, and business impact.</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="assets/ClaimFlow/Settlemed-ClaimFlow_presentation.pdf" target="_blank"
+                       class="bg-white text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition inline-flex items-center gap-1 border border-gray-200">
+                        <i class="fas fa-file-pdf"></i> View Full Presentation (PDF)
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between items-center gap-3">
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1 rounded-full">Power BI (DAX, Power Query)</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1 rounded-full">SQL Server</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1 rounded-full">Star Schema</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1 rounded-full">Python (Faker)</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1 rounded-full">Advanced Excel</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1 rounded-full">Google Sheets</span>
+                </div>
+                <a href="assets/ClaimFlow/ClaimFlow_presentation.pdf" download
+                   class="bg-gray-100 text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition inline-flex items-center gap-1">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+    `
+}
     };
 
     title.textContent = projects[projectId].title;
